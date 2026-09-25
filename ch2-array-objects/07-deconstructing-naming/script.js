@@ -1,3 +1,5 @@
+const { append } = require("express/lib/response");
+
 const firstName = "Jane"
 const lastName = "Doe"
 const age = 30;
@@ -61,3 +63,25 @@ const numbers = [1,2,3,4,5,6]
 const [first, second, third, ...rest] = numbers
 
 console.log(first, third, rest)
+
+/********************* array indexing or accessing an array element by index. *******************************/
+/* further examples using youtube videos to understand destructuring and restructuring arrays and objects */
+
+/*
+Grab the first element from alphabet
+Store it in a new variable called a
+*/
+const alphabet = ['a', 'b', 'c', 'd', 'e']
+const numbers1 = [1,2,3,4,5]
+
+// const a = alphabet[0]
+// const b = alphabet[1]
+
+//destructing 
+//Take the first value from alphabet and store it in a.
+//Take the second value from alphabet and store it in b.
+
+const [a, b] = numbers1
+
+console.log(a, b);
+
