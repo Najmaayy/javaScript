@@ -83,5 +83,60 @@ const order = {
 
 };
 
-const {id, product, customer: {name1, city, age}} = order
+const {id, product, customer: {name1, city}} = order
 console.log(id, product, name1, city);
+
+//Exercise 4: Array Destructuring
+
+const colours = ["red", "blue", "green", "yellow", "purple"];
+
+const [first1, second1, third] = colours 
+
+console.log(first1, second1, third);
+
+//Exercise 5: Objects and Arrays
+
+const student = {
+  id4: 12,
+  details: {
+    firstName1: "Alex",
+    lastName1: "Smith"
+  },
+  grades: [80, 90, 75]
+};
+
+const {id4, details: {firstName1, lastName1}, grades: [firstGrade, secondGrade]
+} = student
+//console.log(student);
+console.log(id4, firstName1, lastName1, firstGrade, secondGrade);
+
+/*
+It should be like this:
+id
+firstName
+lastName
+firstGrade
+secondGrade
+*/
+
+/*
+Cheat Code
+
+// Object
+const { property } = object;
+
+// Rename
+const { property: newName } = object;
+
+// Nested object
+const { outer: { inner } } = object;
+
+// Array
+const [first, second] = array;
+
+// Array with rest
+const [first, second, ...rest] = array;
+
+
+
+*/
