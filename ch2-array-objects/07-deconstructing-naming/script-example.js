@@ -140,3 +140,14 @@ const [first, second, ...rest] = array;
 
 
 */
+
+let arr3 = 'Deer';
+
+let arr4 = 'Greet';
+
+console.log(arr3);
+console.log(arr4);
+
+let newArr = arr3; 
+
+console.log(newArr, arr3);

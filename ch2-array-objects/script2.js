@@ -1,3 +1,12 @@
+/*
+
+Create a library array with 3 book objects, each containing title, author, and a nested status object.
+Change every book's read property from false to true using dot notation.
+Destructure the first book's title and rename the variable to firstBook.
+Convert the entire library array into a JSON string.
+
+*/
+
 //Step 1
 const library = [ {
     
