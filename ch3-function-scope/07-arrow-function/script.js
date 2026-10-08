@@ -20,14 +20,15 @@ const double = a => a * 2;
 // can mean two different things depending on where they appear.
 
 
-const createObject = () => ({
+const createObject = () =>( {
     name:  'Brad'
 })
 
 //Array
 
 const numbers = [1, 2, 3, 4, 5]
-numbers.forEach(function (n) {
+
+numbers.forEach( function (n) {
     console.log(n);
 
 }); 
